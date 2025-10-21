@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TB Burden Analysis Report - MCSC2108</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        .header { text-align: center; color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 20px; }
+        .section { margin: 30px 0; }
+        .figure { text-align: center; margin: 20px 0; }
+        .figure img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+        .analysis { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 15px 0; }
+        .conclusion { background: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 5px solid #4caf50; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; }
+        .metadata { background: #fff3cd; padding: 15px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Global Tuberculosis Burden Analysis</h1>
+        <h2>A Comprehensive Data Visualization Study (1990-2013)</h2>
+        <div class="metadata">
+            <strong>Author:</strong> Daniel Wanjal Machimbo<br>
+            <strong>Course:</strong> MCSC 2108: Data Visualization<br>
+            <strong>Institution:</strong> The Cooperative University of Kenya<br>
+            <strong>Date:</strong> October 21, 2025<br>
+            <strong>Dataset:</strong> WHO Global Tuberculosis Burden (5,120 records, 219 countries)
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Executive Summary</h2>
+        <p>This comprehensive analysis examines global tuberculosis (TB) burden patterns from 1990 to 2013 using WHO data covering 219 countries and territories. Through seven publication-quality visualizations, we identify critical geographic disparities, temporal trends, and epidemiological patterns that inform global TB control strategies.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Global TB Incidence Distribution (2013)</h2>
+        <div class="figure">
+            <img src="../figures/choropleth_incidence_per100k_2013.png" alt="Global TB Incidence Map">
+        </div>
+        <div class="analysis">
+            <strong>Analysis:</strong> The global choropleth reveals stark geographic disparities in TB burden. Sub-Saharan African countries demonstrate the highest incidence rates, with several nations exceeding 500 cases per 100,000 population. This reflects complex interactions between HIV co-infection, socioeconomic factors, and healthcare infrastructure limitations.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Top 10 High-Burden Countries</h2>
+        <div class="figure">
+            <img src="../figures/top10_incidence_per100k_2013.png" alt="Top 10 Countries by TB Incidence">
+        </div>
+        <div class="analysis">
+            <strong>Analysis:</strong> The horizontal bar chart identifies countries with the highest TB incidence rates in 2013. This concentration in specific regions underscores the importance of regional collaboration and targeted resource allocation.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Temporal Trends in High-Burden Countries</h2>
+        <div class="figure">
+            <img src="../figures/trends_top5.png" alt="TB Trends Top 5 Countries">
+        </div>
+        <div class="analysis">
+            <strong>Analysis:</strong> The temporal trend analysis reveals diverse trajectories among high-burden countries over 24 years. Some show declining trends (successful DOTS implementation), while others maintain stable or increasing rates, indicating persistent challenges.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Regional TB Burden Over Time</h2>
+        <div class="figure">
+            <img src="../figures/stacked_area_region.png" alt="Regional Stacked Area Chart">
+        </div>
+        <div class="analysis">
+            <strong>Analysis:</strong> The stacked area chart demonstrates that Africa and South-East Asia consistently account for the largest proportions of global TB burden, reflecting both high incidence rates and substantial population sizes.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Regional Incidence Heatmap</h2>
+        <div class="figure">
+            <img src="../figures/heatmap_region_year.png" alt="Regional Heatmap">
+        </div>
+        <div class="analysis">
+            <strong>Analysis:</strong> The regional heatmap clearly distinguishes high-burden regions from lower-burden areas, revealing temporal stability in regional TB disparities over multiple decades.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Incidence-Mortality Correlation</h2>
+        <div class="figure">
+            <img src="../figures/scatter_incidence_vs_deaths.png" alt="Incidence vs Mortality Scatter Plot">
+        </div>
+        <div class="analysis">
+            <strong>Analysis:</strong> Strong positive correlation (R² > 0.8) between TB incidence and mortality rates demonstrates the critical importance of early detection, diagnosis, and treatment accessibility in preventing TB deaths.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Demographics Considerations</h2>
+        <div class="figure">
+            <img src="../figures/small_multiples_demographics.png" alt="Demographics Analysis">
+        </div>
+        <div class="analysis">
+            <strong>Analysis:</strong> While comprehensive demographic breakdowns were limited, the framework demonstrates the importance of considering population structure and socioeconomic factors in TB epidemiology.
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <h2>Key Conclusions</h2>
+        <ul>
+            <li><strong>Geographic Concentration:</strong> TB burden remains highly concentrated in Sub-Saharan Africa and South-East Asia</li>
+            <li><strong>Strong Correlations:</strong> Tight incidence-mortality correlation (R² > 0.8) emphasizes healthcare system importance</li>
+            <li><strong>Regional Stability:</strong> Burden distributions show remarkable stability, indicating need for enhanced interventions</li>
+            <li><strong>Variation Exists:</strong> Country-level differences suggest successful TB control is achievable</li>
+        </ul>
+
+        <h3>Recommendations:</h3>
+        <ul>
+            <li>Prioritize resources to Sub-Saharan Africa and South-East Asia</li>
+            <li>Strengthen healthcare systems in high-burden countries</li>
+            <li>Develop region-specific intervention strategies</li>
+            <li>Enhance international collaboration for sustainable programs</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technical Specifications</h2>
+        <div class="metadata">
+            <strong>Study Period:</strong> 1990-2013 (24 years)<br>
+            <strong>Geographic Coverage:</strong> 219 countries and territories<br>
+            <strong>Dataset Size:</strong> 5,120 records, 50 variables<br>
+            <strong>Analysis Tools:</strong> Python 3.11, pandas, matplotlib, plotly, seaborn<br>
+            <strong>Visualization Standards:</strong> 300 DPI resolution, colorblind-safe palettes<br>
+            <strong>Quality Assurance:</strong> Outlier detection, missing value analysis, ISO compliance
+        </div>
+    </div>
+</body>
+</html>
