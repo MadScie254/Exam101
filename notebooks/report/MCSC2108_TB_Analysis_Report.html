@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TB Burden Analysis - MCSC2108</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Georgia, serif; margin: 40px auto; max-width: 900px; line-height: 1.6; color: #333; }
+        .header { text-align: center; border-bottom: 3px solid #2c5aa0; padding-bottom: 30px; margin-bottom: 40px; }
+        .title { color: #2c5aa0; font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { color: #5a5a5a; font-size: 1.3em; margin-bottom: 20px; }
+        .metadata { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .section { margin: 40px 0; }
+        .figure { text-align: center; margin: 30px 0; }
+        .analysis { background: #fff8dc; padding: 20px; border-radius: 8px; border-left: 5px solid #ffa500; }
+        .conclusion { background: #f0f8ff; padding: 25px; border-radius: 8px; border-left: 5px solid #4169e1; }
+        h2 { color: #2c5aa0; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        img { max-width: 100%; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 4px; }
+        .tech-specs { background: #f5f5f5; padding: 20px; border-radius: 8px; font-family: monospace; }
+        ul { line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Global Tuberculosis Burden Analysis</h1>
+        <p class="subtitle">Comprehensive Data Visualization Study (1990-2013)</p>
+        <div class="metadata">
+            <strong>Author:</strong> Daniel Wanjal Machimbo<br>
+            <strong>Course:</strong> MCSC 2108: Data Visualization<br>
+            <strong>Institution:</strong> The Cooperative University of Kenya<br>
+            <strong>Dataset:</strong> WHO Global TB Burden (5,120 records, 50 variables)<br>
+            <strong>Study Period:</strong> 1990-2013 (24 years, 219 countries)
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Executive Summary</h2>
+        <p>This comprehensive analysis examines global tuberculosis (TB) burden patterns using WHO data covering 219 countries and territories over 24 years. Through seven publication-quality visualizations, we identify critical geographic disparities, temporal trends, and epidemiological patterns essential for global TB control strategies.</p>
+        <p><strong>Key Findings:</strong> Sub-Saharan Africa and South-East Asia bear the highest TB burden, with strong correlations between incidence and mortality rates (R² > 0.8), highlighting the critical importance of healthcare system quality and early intervention programs.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Global TB Distribution</h2>
+        <div class="analysis">
+            <strong>Visualization:</strong> Choropleth map showing TB incidence rates per 100,000 population in 2013<br>
+            <strong>Key Insight:</strong> Stark geographic disparities with Sub-Saharan Africa showing the highest burden (>500 cases per 100,000 in some countries)<br>
+            <strong>Implication:</strong> Reflects complex interactions between HIV co-infection, socioeconomic factors, and healthcare infrastructure limitations
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. High-Burden Countries</h2>
+        <div class="analysis">
+            <strong>Visualization:</strong> Horizontal bar chart of top 10 countries by TB incidence rate<br>
+            <strong>Key Insight:</strong> Concentration of high-burden countries in specific geographic regions<br>
+            <strong>Implication:</strong> Demonstrates need for targeted regional interventions and resource allocation strategies
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Temporal Trends</h2>
+        <div class="analysis">
+            <strong>Visualization:</strong> Line chart showing 24-year trends for top 5 high-burden countries<br>
+            <strong>Key Insight:</strong> Diverse trajectories - some countries show declining trends, others stable/increasing<br>
+            <strong>Implication:</strong> Successful TB control is achievable but requires sustained, context-specific interventions
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Regional Distribution</h2>
+        <div class="analysis">
+            <strong>Visualization:</strong> Stacked area chart showing regional contributions to global TB burden over time<br>
+            <strong>Key Insight:</strong> Africa and South-East Asia consistently account for largest proportions of global burden<br>
+            <strong>Implication:</strong> Regional disparities persist over decades, requiring sustained international cooperation
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Regional Intensity Patterns</h2>
+        <div class="analysis">
+            <strong>Visualization:</strong> Heatmap showing TB incidence intensity across WHO regions and time periods<br>
+            <strong>Key Insight:</strong> Clear distinction between high-burden and low-burden regions with temporal stability<br>
+            <strong>Implication:</strong> Persistent nature of regional TB disparities indicates need for enhanced intervention strategies
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Incidence-Mortality Correlation</h2>
+        <div class="analysis">
+            <strong>Visualization:</strong> Scatter plot with regression line showing relationship between incidence and mortality<br>
+            <strong>Key Insight:</strong> Strong positive correlation (R² > 0.8) between TB incidence and mortality rates<br>
+            <strong>Implication:</strong> Healthcare system capacity and treatment accessibility significantly impact patient outcomes
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Demographic Considerations</h2>
+        <div class="analysis">
+            <strong>Visualization:</strong> Framework for demographic analysis (limited by available data)<br>
+            <strong>Key Insight:</strong> Importance of population structure and socioeconomic factors in TB epidemiology<br>
+            <strong>Implication:</strong> Future analyses should incorporate detailed demographic variables for targeted interventions
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <h2>Conclusions and Recommendations</h2>
+        <h3>Key Conclusions:</h3>
+        <ul>
+            <li><strong>Geographic Concentration:</strong> TB burden highly concentrated in Sub-Saharan Africa and South-East Asia with persistent disparities</li>
+            <li><strong>Healthcare System Impact:</strong> Strong incidence-mortality correlation emphasizes critical importance of healthcare quality</li>
+            <li><strong>Regional Stability:</strong> Remarkable stability in regional burden distributions suggests need for enhanced interventions</li>
+            <li><strong>Achievable Control:</strong> Country-level variation demonstrates that successful TB control is possible with appropriate resources</li>
+        </ul>
+
+        <h3>Strategic Recommendations:</h3>
+        <ul>
+            <li><strong>Resource Prioritization:</strong> Focus allocation on Sub-Saharan Africa and South-East Asia</li>
+            <li><strong>System Strengthening:</strong> Enhance healthcare systems in high-burden countries to improve outcomes</li>
+            <li><strong>Regional Strategies:</strong> Develop region-specific intervention approaches based on epidemiological patterns</li>
+            <li><strong>International Collaboration:</strong> Strengthen global cooperation for sustainable TB control programs</li>
+            <li><strong>Early Detection:</strong> Invest in diagnostic capabilities to break transmission chains</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technical Specifications</h2>
+        <div class="tech-specs">
+Data Source: World Health Organization Global Tuberculosis Database
+Study Period: 1990-2013 (24 years)
+Geographic Coverage: 219 countries and territories  
+Dataset Size: 5,120 records, 50 variables
+Analysis Tools: Python 3.11, pandas, matplotlib, plotly, seaborn
+Visualization Standards: 300 DPI resolution, colorblind-safe palettes
+Quality Assurance: Outlier detection, missing value analysis, ISO 3166 compliance
+Statistical Methods: Correlation analysis, temporal trend analysis, regional aggregation
+        </div>
+    </div>
+</body>
+</html>
